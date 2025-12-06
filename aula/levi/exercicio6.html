@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>calculadora</h1>
+        <hr>
+        <div>
+        <label for="primeiro numero"></label>
+        <input type="num1" id="n1">
+         <label for="primeiro numero"></label>
+        <input type="num2" id="n2">
+      </div>
+      <br>
+      <div>
+        <button onclick="somar()">somar</button>
+         <button onclick="subtrair()">subtrair</button>
+      </div>
+      <hr>
+      <div id="resultado"></div>
+    </body>
+
+   <script>
+    function somar() {
+      let num1 = Number(document.getElementById("n1").value);
+      let num2 = Number(document.getElementById("n2").value);
+      let resultado = document.getElementById("resultado");
+      resultado.innerText = "resultado:" + calculadora1(num1,num2);
+    }
+     function subtrair() {
+      let num1 = Number(document.getElementById("n1").value);
+      let num2 = Number(document.getElementById("n2").value);
+      let resultado = document.getElementById("resultado");
+      resultado.innerText = "resultado:" + calculadora2(num1,num2);
+    }
+    function calculadora1(n1,n2){
+        return n1+n2;
+    }
+    function calculadora2(n1,n2){
+        return n1-n2;
+    }
+   
+
+
+  </script>
+</html>
